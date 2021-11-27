@@ -24,9 +24,10 @@ export default function Home() {
             visible: {
               scale: 0.5,
               opacity: 1,
+              y: -400,
               
               transition: {
-                delay: 1,
+                delay: 1.5,
               },
             },
           }}
