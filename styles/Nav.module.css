@@ -1,13 +1,76 @@
-.container{
+.standardComponent {
+  /* From https://css.glass */
+  color: white;
+  background: rgba(244, 244, 244, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(244, 244, 244, 0.3);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  padding: 1rem;
+  margin: 5px;
+}
+.headerWrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: max-content;
+  width: 100%;
+  flex-wrap: wrap;
+  min-width: 320px;
+}
+.titleLogo {
+  height: 100px;
+}
+.logoWrap {
+  min-width: 320px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: none;
 }
-.navWrap {
-  background-color: #a4caff;
-  width: 100vw;
-  height: 80px;
-  z-index: 3;
+.brandContainer {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 320px;
+}
+.brand {
+  font-family: "Orbitron", sans-serif;
+  font-size: 35pt;
+  margin: 0;
+}
+.tagline {
+  font-family: "Special Elite", cursive;
+  font-size: 11pt;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  width: 320px;
+  flex-wrap: wrap;
+  padding: 5px;
+  justify-content: center;
+}
+.button {
+  padding: 5px 10px;
+  margin: 2.5px 2.5px;
+  border: 1px transparent solid;
+  cursor: pointer;
+}
+.button:hover {
+  padding: 5px 10px;
+  margin: 2.5px 2.5px;
+  /* From https://css.glass */
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
 }
