@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { motion } from "framer-motion";
-import Link from 'next/link'
+import Link from "next/link";
 import styles from "../styles/Nav.module.css";
 
 export default class Nav extends Component {
@@ -34,7 +34,6 @@ export default class Nav extends Component {
                   visible: {
                     scale: 1,
                     opacity: 1,
-                    
 
                     transition: {
                       delay: 0.2,
@@ -54,7 +53,6 @@ export default class Nav extends Component {
                   load: {
                     scale: 0.8,
                     opacity: 1,
-                 
                   },
                   visible: {
                     scale: 1,
@@ -79,7 +77,6 @@ export default class Nav extends Component {
                   load: {
                     scale: 0.8,
                     opacity: 1,
-             
                   },
                   visible: {
                     scale: 1,
@@ -104,7 +101,6 @@ export default class Nav extends Component {
                   load: {
                     scale: 0.8,
                     opacity: 1,
-                 
                   },
                   visible: {
                     scale: 1,
@@ -129,7 +125,6 @@ export default class Nav extends Component {
                   load: {
                     scale: 0.8,
                     opacity: 1,
-                  
                   },
                   visible: {
                     scale: 1,
@@ -145,6 +140,31 @@ export default class Nav extends Component {
               >
                 {" "}
                 <div className={styles.button}>Create Ticket</div>
+              </motion.div>
+            </Link>
+            <Link href="">
+              <motion.div
+                initial="load"
+                animate="visible"
+                variants={{
+                  load: {
+                    scale: 0.8,
+                    opacity: 1,
+                  },
+                  visible: {
+                    scale: 1,
+                    opacity: 1,
+                    y: 0,
+
+                    transition: {
+                      delay: 0.2,
+                      duration: 0.2,
+                    },
+                  },
+                }}
+              >
+                {" "}
+                <div className={styles.button}>More...</div>
               </motion.div>
             </Link>
           </div>
